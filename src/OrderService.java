@@ -10,6 +10,6 @@ public class OrderService {
         if (commonName == null || commonName.isEmpty()) {
             return "EMS-901";
         }
-        return "submitted:" + commonName;
+        return "submitted:" + commonName + " t=" + TIMEOUT_SECONDS;
     }
 }
