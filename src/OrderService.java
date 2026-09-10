@@ -10,7 +10,7 @@ public class OrderService {
     private static final int MAX_SAN = 100;
 
     public String submitOrder(String commonName) {
-        if (commonName == null || commonName.isEmpty()) {
+        if (commonName == null || commonName.trim().isEmpty()) {
             return "EMS-901";
         }
         return "submitted:" + commonName + " t=" + TIMEOUT_SECONDS;
